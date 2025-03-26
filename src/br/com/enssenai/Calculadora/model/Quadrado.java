@@ -5,6 +5,15 @@ public class Quadrado {
 	private double area;
 	private double perimetro;
 	
+	public void setLado(double lado) {
+		if (lado <= 0) {
+			System.out.println("Por favor inserir um número maior que 0");
+		} else {
+			this.lado = lado;
+			calcularArea();
+			calcularPerimetro();
+		}
+	}
 	public void calcularArea() {
 		area = lado*lado;
 		
