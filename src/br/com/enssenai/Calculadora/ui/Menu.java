@@ -1,8 +1,9 @@
 package br.com.enssenai.Calculadora.ui;
+import br.com.enssenai.Calculadora.dao.QuadradoDao;
+import br.com.enssenai.Calculadora.dao.RetanguloDao;
+import br.com.enssenai.Calculadora.model.Retangulo;
 
 import java.util.Scanner;
-
-import br.com.enssenai.Calculadora.dao.QuadradoDao;
 
 public class Menu {
 	
@@ -12,13 +13,13 @@ public class Menu {
 		System.out.println("Calculadora de Polígonos");
 		System.out.println("---------------------------");
 		System.out.println("1- Quadrado (NOVO)");
-//		System.out.println("2- Retângulo (NOVO)");
-//		System.out.println("3- Trapézio (NOVO)");
-//		System.out.println("4. Circunferência (NOVO)");
-//		System.out.println("5- Triângulo (NOVO)");
-//		System.out.println("6- Sair");
+		System.out.println("2- Retângulo (NOVO)");
+		System.out.println("3- Trapézio (NOVO)");
+		System.out.println("4. Circunferência (NOVO)");
+		System.out.println("5- Triângulo (NOVO)");
+		System.out.println("6- Sair");
 		System.out.println("---------------------------");
-//		System.out.print("Escolha uma opção (1-6): ");
+		System.out.print("Escolha uma opção (1-6): ");
 		
 		Scanner reader = new Scanner(System.in);
 		int opcao = reader.nextInt();
@@ -27,9 +28,26 @@ public class Menu {
 			System.out.println("Você selecionou o Quadrado");
 			QuadradoDao.criarQuadrado();
 		}
+		else if (opcao == 2){
+			System.out.println("Você selecionou o Retangulo");
+			RetanguloDao.criarRetangulo();
+		}
+		else if (opcao == 3) {
+			System.out.println("Você selecionou o Trapézio");
+		}
+		else if (opcao == 4) {
+			System.out.println("Você selecionou o Circunferência");
+		}
+		else if (opcao == 5) {
+			System.out.println("Você selecionou o Triângulo");
+		}
+		else if (opcao == 6) {
+			System.out.println("Saindo do programa...");
+			System.out.println("Programa encerrado");
+		}
 		else {
-			System.out.println("Você digitou outro numero");
-//			return;
+			System.out.println("Você digitou um numero inválido");
+			mostrarMenu();
 		}
 	}
 	
