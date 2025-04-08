@@ -2,9 +2,18 @@ package br.com.enssenai.Calculadora.model;
 
 public class Circunferencia {
 	private double pi = 3.141592653589793;
-	private double raio = 5;
+	private double raio;
 	private double area;
 	
+	public void setRaio(double raio) {
+		if (raio < 0) {
+			System.out.println("Por favor inserir um número maior que 0");
+		} else {
+			this.raio = raio;
+			calcularArea();
+		}
+	}
+
 	public void calcularArea() {
 		area = pi*(raio*raio);
 	}

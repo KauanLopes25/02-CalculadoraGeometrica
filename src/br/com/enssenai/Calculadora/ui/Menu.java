@@ -1,7 +1,10 @@
 package br.com.enssenai.Calculadora.ui;
+import br.com.enssenai.Calculadora.dao.CircunferenciaDao;
 import br.com.enssenai.Calculadora.dao.QuadradoDao;
 import br.com.enssenai.Calculadora.dao.RetanguloDao;
+import br.com.enssenai.Calculadora.dao.TrapezioDao;
 import br.com.enssenai.Calculadora.dao.TrianguloDao;
+import br.com.enssenai.Calculadora.model.Circunferencia;
 import br.com.enssenai.Calculadora.model.Retangulo;
 
 import java.util.Scanner;
@@ -35,9 +38,11 @@ public class Menu {
 		}
 		else if (opcao == 3) {
 			System.out.println("Você selecionou o Trapézio");
+			TrapezioDao.criarTrapezio();
 		}
 		else if (opcao == 4) {
 			System.out.println("Você selecionou o Circunferência");
+			CircunferenciaDao.criarCircunferencia();
 		}
 		else if (opcao == 5) {
 			System.out.println("Você selecionou o Triângulo");

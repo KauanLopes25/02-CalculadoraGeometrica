@@ -11,11 +11,11 @@ public class TrianguloDao {
 		Scanner reader = new Scanner(System.in);
 		
 		System.out.println("\nCriando triangulo... ");
-		System.out.println("Insira a base do triangulo: ");
+		System.out.println("Insira a base: ");
 		
 		triangulo.setBase(reader.nextDouble());
 		
-		System.out.println("Insira a altura do triangulo: ");
+		System.out.println("Insira a altura: ");
 		
 		triangulo.setAltura(reader.nextDouble());
 	}

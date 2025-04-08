@@ -10,13 +10,13 @@ public class RetanguloDao {
 		
 		//Comunicação com usuário 
 		System.out.println("\nCriando retangulo... ");
-		System.out.println("Insira o lado do retangulo: ");
+		System.out.println("Insira o lado: ");
 		
 		//Recebendo base
 		retangulo.setBase(reader.nextDouble());
 		
 		//Comunicação com usuário
-		System.out.println("Insira o altura do retangulo: ");
+		System.out.println("Insira a altura: ");
 		
 		//Recebendo altura
 		retangulo.setAltura(reader.nextDouble());

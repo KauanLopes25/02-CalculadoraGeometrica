@@ -11,7 +11,7 @@ public class QuadradoDao {
 		
 		//Comunicação com usuário
 				System.out.println("\nCriando quadrado... ");
-				System.out.println("Insira o lado do quadrado: ");
+				System.out.println("Insira o lado: ");
 			
 		//Recebendo lado
 		quadrado.setLado(reader.nextDouble());
