@@ -25,15 +25,15 @@ public class Quadrado {
 	}
 	
 	public void mostrarDados() {
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("Forma geométrica: Quadrado");
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("MEDIDAS");
 		System.out.println("lado: "+lado);
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("RESOLUÇÕES OBTIDAS");
 		System.out.println("Área: "+area);
 		System.out.println("Perimetro: "+perimetro);
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 	}
 }

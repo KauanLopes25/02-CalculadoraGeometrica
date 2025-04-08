@@ -1,6 +1,7 @@
 package br.com.enssenai.Calculadora.ui;
 import br.com.enssenai.Calculadora.dao.QuadradoDao;
 import br.com.enssenai.Calculadora.dao.RetanguloDao;
+import br.com.enssenai.Calculadora.dao.TrianguloDao;
 import br.com.enssenai.Calculadora.model.Retangulo;
 
 import java.util.Scanner;
@@ -40,6 +41,7 @@ public class Menu {
 		}
 		else if (opcao == 5) {
 			System.out.println("Você selecionou o Triângulo");
+			TrianguloDao.criarTriangulo();
 		}
 		else if (opcao == 6) {
 			System.out.println("Saindo do programa...");

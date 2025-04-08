@@ -9,14 +9,14 @@ public class Circunferencia {
 		area = pi*(raio*raio);
 	}
 	public void mostrarDados() {
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("Forma geométrica: Circunferência");
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("MEDIDAS");
 		System.out.println("Raio: "+raio);
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 		System.out.println("RESOLUÇÕES OBTIDAS");
 		System.out.println("Área: "+area);
-		System.out.println("--------------");
+		System.out.println("---------------------------");
 	}
 }
